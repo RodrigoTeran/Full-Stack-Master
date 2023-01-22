@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: lightgrey; /*Color*/
+    font-family: Arial, Helvetica, sans-serif; /*Fuente*/
+
+}
+
+#container {
+    width: 70%; /*Ancho*/
+    margin: 0px auto; /*Margen de 0 pixeles. Centra el elmento lso mas que pueda*/
+    border: 1px solid black;
+}
+
+header{
+    background: red;
+    height: 100px;
+    width: 100%;
+
+    text-align: center; /*Centramos el texto*/
+    line-height: 100px; /*Centramos el texto en medio vertical*/
+    /*Misma altura que la de la caja*/
+    color: white; /*Color del texto*/
+    border-bottom: 3px dashed black; /*Borde inferior*/
+}
+
+nav {
+    background: lightblue;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    float: left; /*Flotar los valores a la izquierda*/
+    /*Se colocan uno al lado de otro*/
+    list-style-type: none;
+    margin: 10px; /*Margen de 10 pixeles hacia todas direcciones*/
+    line-height: 30px;
+
+}
+
+.clearfix{
+    clear: both;
+}
+
+#content{
+    float: left;
+    width: calc(80% - 80px);
+    min-height: 500px;
+    background: green;
+    padding: 40px;
+
+}
+
+.article{
+    color: white;
+    margin: 15px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.article:first-child {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.article h2{
+    font-size: 25px;
+}
+
+aside{
+    float:left;
+    width: calc(20% - 20px);
+    min-height: 500px;
+    background: orange;
+    padding: 0px 10px 0px 10px;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+

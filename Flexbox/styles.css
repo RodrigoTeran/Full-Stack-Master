@@ -1,0 +1,51 @@
+body{
+    background: beige;
+}
+
+.flex-container {
+    border: 1px solid black;
+    background-color: #ccc;
+    padding: 20px;
+    display: flex; /*Row por defecto*/
+    /*flex-direction: row;
+    flex-wrap: wrap;*/ /*Si se llena el container lo acomoda automaticamente*/
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    /*align-items: center;*/
+    width: 80%;
+    margin: 0 auto;
+}
+
+.caja {
+    border: 1px solid rgb(105, 103, 103);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    margin: 5px;
+}
+
+.c1 {
+    background-color: lightblue;
+    order: 1; /*Propiedad dentro de un flex container*/
+    flex-grow: 1; /*Prioridad*/
+    flex-basis: 50%; /*Width*/
+}
+
+.c2{
+    background-color: lightcoral;
+    order: 3;
+    flex-grow: 1;
+}
+
+.c3{
+    background-color: lightgreen;
+    order: 2;
+    flex-grow: 1;
+}
+

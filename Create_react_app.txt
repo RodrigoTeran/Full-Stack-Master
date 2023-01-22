@@ -1,0 +1,4 @@
+npx create-react-app nombreCarpeta
+
+cd nombreCarpeta
+npm start
